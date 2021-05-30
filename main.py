@@ -1,8 +1,8 @@
 import telebot
 import pyowm
 import time
-owm = pyowm.OWM('9b65aaadc20dece694ffb1fd5c81acf1')
-bot = telebot.TeleBot("1206910967:AAHnVvGM3ERtYg8UiNHMITFLnea1TqSKoIE")
+owm = pyowm.OWM('Your-token')
+bot = telebot.TeleBot("Your-token")
 @bot.message_handler(content_types=["text"])
 def firs_message(message):
     if message.text == "/start":
